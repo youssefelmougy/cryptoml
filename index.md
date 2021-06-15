@@ -27,6 +27,8 @@ As the semester progresses, these techniques are subject to change as we will be
 
 ## Potential results and Discussion
 
+With the use of accurate predictive analysis techniques, we hope that our model can provide traders and cryptocurrency holders an accurate prediction of the next possible shitcoin to aid in providing the best investment opportunities.
+
 ## Proposal Video
 
 ## References
