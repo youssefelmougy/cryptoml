@@ -25,7 +25,6 @@ Due to the nature of the two options output produced by the algorithm, this prob
 
 As the semester progresses, these techniques are subject to change as we will be learning a variety of other predictive analysis techniques that could possibly do better than our initial potential solutions.
 
-
 ## Potential results and Discussion
 
 ## Proposal Video
