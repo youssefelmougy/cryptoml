@@ -2,13 +2,13 @@
 layout: default
 ---
 
-# Introduction/Background
+## Introduction/Background
 
 
-# Problem definition
+## Problem definition
 
-# Methods
+## Methods
 
-# Potential results and Discussion
+## Potential results and Discussion
 
-# References
+## References
