@@ -21,6 +21,8 @@ We hope to create a program that will take in the required data (who is holding,
 
 ## Potential results and Discussion
 
+## Proposal Video
+
 ## References
 
 Sebastião, H., Godinho, P. Forecasting and trading cryptocurrencies with machine learning under changing market conditions. Financ Innov 7, 3 (2021). [Retrieve](https://doi.org/10.1186/s40854-020-00217-x).
