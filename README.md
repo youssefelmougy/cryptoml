@@ -1,3 +1,3 @@
 # CryptoML
 
-Cyprotcurrency Shitcoin Prediction and Payment Fraud Detection
+Cyprotcurrency Shitcoin Prediction
