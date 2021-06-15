@@ -23,8 +23,8 @@ We hope to create a program that will take in the required data (who is holding,
 
 ## References
 
-Sebastião, H., Godinho, P. Forecasting and trading cryptocurrencies with machine learning under changing market conditions. Financ Innov 7, 3 (2021). [https://doi.org/10.1186/s40854-020-00217-x]
+Sebastião, H., Godinho, P. Forecasting and trading cryptocurrencies with machine learning under changing market conditions. Financ Innov 7, 3 (2021). https://doi.org/10.1186/s40854-020-00217-x
 
-Bitcoin, B. (2021). Shitcoin Due Diligence. Retrieved from [http://www.blacksinbitcoin.com/2021/04/shitcoin-due-diligence.html]
+Bitcoin, B. (2021). Shitcoin Due Diligence. Retrieved from http://www.blacksinbitcoin.com/2021/04/shitcoin-due-diligence.html
 
-Riley, Z. (2021). What are "Shitcoins"? How to find & Avoid in Cryptocurrency Market. Retrieved from <href="https://the-tech-trend.com/cryptocurrency/what-are-shitcoins-how-to-find-avoid-in-cryptocurrency-market/">
+Riley, Z. (2021). What are "Shitcoins"? How to find & Avoid in Cryptocurrency Market. Retrieved from https://the-tech-trend.com/cryptocurrency/what-are-shitcoins-how-to-find-avoid-in-cryptocurrency-market/
