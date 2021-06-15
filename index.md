@@ -2,6 +2,8 @@
 layout: default
 ---
 
+![ProjectProposal](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/projproposal.png)
+
 ## Introduction/Background
 
 Cryptocurrencies, or virtual currencies, are digital means of exchange that use cryptography for security. The word 'crypto' comes from the ancient greek word, 'kryptós', which means hidden or private. A digital currency that is created and used by private individuals or groups has multiple benefits. Currently, cryptocurrencies can be divided into three categories: **Bitcoin**, **altcoins** (anything other than Bitcoin that has value), and **shitcoins** (coins with ultimately no value). 
