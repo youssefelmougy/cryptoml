@@ -17,6 +17,9 @@ Our goal is to use predictive analysis techniques to help indicate whether a shi
 
 ## Methods
 
+Required data, such as who is holding the coin and how much of the coin they hold, will be taken in, and an output of whether the shitcoin is a rug or not will be evaluated. This data can be easily obtained from [Blockchain.com](https://www.blockchain.com/explorer/) and [Etherscan.io](https://etherscan.io).
+
+
 We hope to create a program that will take in the required data (who is holding, and how much they hold), and give us an output as to whether the shitcoin is a rug or not. This means that the problem is a binary classification problem since the output is only one of two options. To go about tackling the problem we may use one neural network along with a binary cross entropy loss function, which is standard for binary classification problems. As the semester progresses, these techniques are subject to change as we will be learning a variety of other predictive analysis techniques that could possibly do better than our initial potential solution.
 
 ## Potential results and Discussion
