@@ -33,6 +33,8 @@ With the use of accurate predictive analysis techniques, we hope that our model 
 
 ## Proposal Video
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pSH6fEBTQ8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## References
 
 [1] Sebastião, H., Godinho, P. Forecasting and trading cryptocurrencies with machine learning under changing market conditions. Financ Innov 7, 3 (2021). [Retrieve](https://doi.org/10.1186/s40854-020-00217-x).
