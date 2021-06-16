@@ -33,7 +33,7 @@ With the use of accurate predictive analysis techniques, we hope that our model 
 
 ## Proposal Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pSH6fEBTQ8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="800" height="400" src="https://www.youtube.com/embed/pSH6fEBTQ8s" title="CryptoML" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## References
 
