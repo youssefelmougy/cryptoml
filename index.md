@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![ProjectProposal](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/projproposal.png)
+![ProjectProposal](https://github.com/youssefelmougy/cryptoml/blob/f6ccc6de27af853119f9fb0ec6e34a6f33127c2d/projmidpoint.jpg)
 
 ## Introduction/Background
 
@@ -30,10 +30,6 @@ As the semester progresses, these techniques are subject to change as we will be
 ## Potential results and Discussion
 
 With the use of accurate predictive analysis techniques, we hope that our model can provide traders and cryptocurrency holders an accurate prediction of the next possible shitcoin to aid in providing the best investment opportunities.
-
-## Proposal Video
-
-<iframe width="800" height="400" src="https://www.youtube.com/embed/pSH6fEBTQ8s" title="CryptoML" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## References
 
