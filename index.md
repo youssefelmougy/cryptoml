@@ -89,6 +89,19 @@ The ML performance metrics that were used to evaluate our model were Accuracy, B
 
 ![resultstable](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/resultstable.png)
 
+Discuss results
+
+The results in more detail:
+
+<p float="left" align="middle">
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/accuracy.png" width="310" />
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/precision.png" width="310" />
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/recall.png" width="310" />
+</p>
+<p float="left" align="middle">
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/macrof1.png" width="310" />
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/roc.png" width="310" />
+</p>
 
 
 
