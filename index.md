@@ -70,6 +70,15 @@ The correlation matrix provided very important details as to how the features in
   <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/liquid.jpeg" width="400" />
 </p>
 
+By looking at the correlation of the 11 features with the rugged feature as well as the correlation matrix, we get a clearer picture of the distributions, correlations, and usefulness of the features in our model to predict if a cryptocurrency is rugged or not. The coingecko_rank, whitepaper, and social_media features are highly positively correlated with rugged. This makes sense since less professional and social presence of a cryptocurrency, the higher the risk of the coin being rugged. On the other hand, the num_holders feature is highly negatively correlated with rugged. This as well makes sense because the higher the number of holders then the lower the risk of the coin being rugged.
+
+
+
+
+
+
+
+
 For data preprocessing, we used PCA (Principal component analysis), which is an unsupervised learning technique used for ​​reducing the amount of dimensions within a dataset, increasing interpretability but at the same time minimizing information loss.
 
 
