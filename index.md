@@ -76,15 +76,24 @@ The following is the complete correlation matrix of the dataset, with the featur
 
 ![bigmatrix](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/bigmatrix.png)
 
+## Methods and Results
+
+Due to the nature of the two options output (TRUE, FALSE) produced by the algorithm, this problem is a binary classification problem. As part of our unsupervised learning approach, we used PCA (Principal Component Analysis). PCA is used for reducing the amount of dimensions within a dataset, increasing interpretability but at the same time minimizing information loss. We aim to optimize the number of features used in the prediction by using PCA. We use the classic 80/20 training/testing split. The following is the count of data points classified rugged or not, as well as the split of training and testing data:
+
+<p float="left" align="middle">
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ruggedcount.png" width="400" />
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/trainingsplit.png" width="400" />
+</p>
 
 
 
 
 
 
+here are a total of 12 features in each game to provide an overview of how good a team performs. They are Points scored, Field goal percentage, Free throw percentage, Assists per game, and Rebounds per game (6 for each team). We want to optimize the number of features used in the prediction by employing Principal Component Analysis. By passing in the non compressed data and returning a bar graph that shows how much each feature contributes to the variance, we come up with:
 
 
-For data preprocessing, we used PCA (Principal component analysis), which is an unsupervised learning technique used for ​​reducing the amount of dimensions within a dataset, increasing interpretability but at the same time minimizing information loss.
+
 
 
 ## Methods
