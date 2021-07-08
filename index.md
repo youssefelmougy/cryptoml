@@ -22,12 +22,19 @@ Our goal is to use predictive analysis techniques to help indicate whether a shi
 
 ## Dataset Collection
 
-The data collection process is the most important and crucial part of this project, which is also why it was also the most difficult portion. Our problem relies on a significant amount of data and features to determine whether or not a cryptocurrency is a rug pull or a scam. We ended up using various web scraping tools and tedious data scraping without tools to acquire all the needed data. The data collected includes Bitcoin, altcoins, and coins that have been rug-pulled. The features for each differ and we have missing data since each of the websites did not contain all of the crypto currencies that exist. Certain crypto currencies have limited information simply due to lack of professional development, which itself is a feature we can use (lack of credibility). The other features used include the symbol, price, volume,  market cap, number of holders, the number of social media the currency has, if it has a whitepaper, and whether it's a scam/rug-pull.
+The data collection process is the most important and crucial part of this project, which is also why it was also the most difficult portion. Our problem relies on a significant amount of data and features to determine whether or not a cryptocurrency is a rug pull or a scam. We ended up using various web scraping tools and tedious data scraping without tools to acquire all the needed data. The data collected includes Bitcoin, altcoins, and coins that have been rug-pulled. Certain cryptocurrencies have limited information simply due to lack of professional development, which itself is a feature we have included (lack of credibility). The other features used include the coin symbol, price, volume,  market cap, coingecko rank, volume to market cap ratio, dominance, number of holders, if it has social media, if it has a whitepaper, if 5 holders own 50% of the supply, if it has an unlocked liquidity pool, and whether it's a scam/rug-pull.
 
-Since data came from differing sources, we ended up having entries with more or less data than needed. After the collection of the data, we had to clean everything and unify the formatting to give us a clean and flushed out dataset. The features we ended up dropping includes whether the top 5 holders of a currency own more than 50%, if the liquidity pool is locked, and price change. These features either had too little data spread across all coins or ended up being more irrelevant to our success metrics than we initially assumed. 
+Since data came from differing sources, we ended up having entries with more or less data than needed. After the collection of the data, we had to clean everything and unify the formatting to give us a clean and flushed out dataset. This is discussed in the following section.
 
 
-## Dataset Cleaning
+## Dataset Processing
+
+Before any feature sensitivity analysis, we first did some data clean up. The following is a snapshot of our full dataset which contains 9143 cryptocurrencies and 14 features:
+
+![tabledata](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/tabledata.png)
+
+
+The features we ended up dropping were the coin name and symbols, this will be discussed further in the next section. These features either had too little data spread across all coins or ended up being more irrelevant to our success metrics than we initially assumed. 
 
 For data preprocessing, we used PCA (Principal component analysis), which is an unsupervised learning technique used for ​​reducing the amount of dimensions within a dataset, increasing interpretability but at the same time minimizing information loss.
 
