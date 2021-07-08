@@ -89,9 +89,12 @@ The ML performance metrics that were used to evaluate our model were Accuracy, B
 
 ![resultstable](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/resultstable.png)
 
+These results show high accuracy, through several ML performance metrics, for the PCA model. The model achieved a high of 0.855803 for accuracy, 0.814644 for balanced accuracy, 0.769254 for macro precision, 0.814644 for macro recall, 0.787675 for macro F1, 0.893438 for macro ROC, 0.602815 for precision, 0.747491 for recall, 0.667403 for F1, and 0.893438 for ROC. To have a deeper look at the results of the iterations, below is the ROC graph and Confusion Matrix for iteration 20 (final iteration):
+
+![iteration20graph](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/iteration20graph.png)
+![iteration20matrix](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/iteration20matrix.png)
 
 
-Discuss results
 
 
 
@@ -111,12 +114,6 @@ The results in more detail:
 </p>
 
 
-
-
-Results at final iteration:
-
-![iteration20graph](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/iteration20graph.png)
-![iteration20matrix](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/iteration20matrix.png)
 
 
 
