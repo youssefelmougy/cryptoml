@@ -90,21 +90,8 @@ Due to the nature of the two options output (TRUE, FALSE) produced by the algori
 
 
 
-here are a total of 12 features in each game to provide an overview of how good a team performs. They are Points scored, Field goal percentage, Free throw percentage, Assists per game, and Rebounds per game (6 for each team). We want to optimize the number of features used in the prediction by employing Principal Component Analysis. By passing in the non compressed data and returning a bar graph that shows how much each feature contributes to the variance, we come up with:
 
-
-
-
-
-## Methods
-
-Required data, such as who is holding the coin and how much of the coin they hold, will be taken in, and an output of whether the shitcoin is a rug or not will be evaluated. This data can be easily obtained from [Blockchain.com](https://www.blockchain.com/explorer/) and [Etherscan.io](https://etherscan.io).
-
-Due to the nature of the two options output produced by the algorithm, this problem is a binary classification problem. To go about tackling the problem we may use one neural network along with a binary cross entropy loss function, which is standard for binary classification problems. Moreover, relevant and popular algorithms including Logistic Regression, k-Nearest Neighbors, Decision Trees, SVM, and Naive Bayes will be used in the evalutations.
-
-As the semester progresses, these techniques are subject to change as we will be learning a variety of other predictive analysis techniques that could possibly do better than our initial potential solutions.
-
-## Results and Discussion
+## Discussion
 
 One of the biggest issues we encountered was collecting good consistent data, and combining the data we had without any overlap. The best websites had the least amount of tokens available to us whereas the websites with a surplus of tokens usually lacked information on that token relevant to the needed respective features of the token. We hope to improve our data set and make it more organized for a smoother testing/training process during our final report and analysis.
 
