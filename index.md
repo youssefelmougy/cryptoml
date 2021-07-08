@@ -48,11 +48,17 @@ It is important to know the distributions of the features in the dataset in orde
 
 The distribution of each feature is a very important aspect in understanding the correlation in the dataset. Below are distribution graphs for each of our 12 features:
 
-![data_initial](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/data_initial.png) | ![whitepaperDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/whitepaperDist.png)
+![data_initial](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/data_initial.png) 
+![whitepaperDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/whitepaperDist.png)
 ![socialDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/socialDist.png)
 ![fiveDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/fiveDist.png)
 ![liquidityDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/liquidityDist.png)
 ![ruggedDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ruggedDist.png)
+
+<p float="left">
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/socialDist.png" width="100" />
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/fiveDist.png" width="100" /> 
+</p>
 
 
 
