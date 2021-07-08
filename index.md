@@ -13,17 +13,24 @@ The term shitcoin refers to a cryptocurrency with little to no value or a digita
 
 ## Problem definition
 
-Shitcoins have their pros and cons, as the purpose is for small investors who like to take risk and flip their money in efforts to make a 100-1000% increase in profit returns. The cons come in where the creators of these shitcoins often rug out the coin, meaning they initially own a very large portion of the coin, wait for a series of investments, then sell immediately causing those new investors to lose most of their money and make no profit. Other ways rugs can be detected are through fraudulent contracts, but we will focus on the large account holders. 
+Shitcoins have their pros and cons, as the purpose is for small investors who like to take risk and flip their money in efforts to make a 100-1000% increase in profit returns. The cons come in where the creators of these shitcoins often rug out the coin, meaning they initially own a very large portion of the coin, wait for a series of investments, then sell immediately causing those new investors to lose most of their money and make no profit. Other ways rugs can be detected are through fraudulent contracts, but we will focus on the large account holders.
 
-Previous models, such as [1], have used linear models, random forests (RFs), and SVMs to forcast prices of the Bitcoin and altcoins but have given little attention to shitcoins.
+Previous models, such as [1], have used linear models, random forests (RFs), and SVMs to forecast prices of the Bitcoin and altcoins but have given little attention to shitcoins.
 
 Our goal is to use predictive analysis techniques to help indicate whether a shitcoin is a potential rug or not, which can be determined by looking at all the recent transaction histories, holders, and contracts of the shitcoin [2][3]. We will look at shitcoins that have already been rugged and ones that are still going strong to help with future coins. This will be valuable to evaluate the risk of investments into these shitcoins.
 
+
 ## Dataset Collection
 
+The data collection process is the most important and crucial part of this project, which is also why it was also the most difficult portion. Our problem relies on a significant amount of data and features to determine whether or not a cryptocurrency is a rug pull or a scam. We ended up using various web scraping tools and tedious data scraping without tools to acquire all the needed data. The data collected includes Bitcoin, altcoins, and coins that have been rug-pulled. The features for each differ and we have missing data since each of the websites did not contain all of the crypto currencies that exist. Certain crypto currencies have limited information simply due to lack of professional development, which itself is a feature we can use (lack of credibility). The other features used include the symbol, price, volume,  market cap, number of holders, the number of social media the currency has, if it has a whitepaper, and whether it's a scam/rug-pull.
+
+Since data came from differing sources, we ended up having entries with more or less data than needed. After the collection of the data, we had to clean everything and unify the formatting to give us a clean and flushed out dataset. The features we ended up dropping includes whether the top 5 holders of a currency own more than 50%, if the liquidity pool is locked, and price change. These features either had too little data spread across all coins or ended up being more irrelevant to our success metrics than we initially assumed. 
 
 
 ## Dataset Cleaning
+
+For data preprocessing, we used PCA (Principal component analysis), which is an unsupervised learning technique used for ​​reducing the amount of dimensions within a dataset, increasing interpretability but at the same time minimizing information loss.
+
 
 ## Methods
 
@@ -35,7 +42,7 @@ As the semester progresses, these techniques are subject to change as we will be
 
 ## Results and Discussion
 
-
+One of the biggest issues we encountered was collecting good consistent data, and combining the data we had without any overlap. The best websites had the least amount of tokens available to us whereas the websites with a surplus of tokens usually lacked information on that token relevant to the needed respective features of the token. We hope to improve our data set and make it more organized for a smoother testing/training process during our final report and analysis.
 
 ## References
 
