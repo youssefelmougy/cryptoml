@@ -55,12 +55,12 @@ The distribution of each feature is a very important aspect in understanding the
 ![liquidityDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/liquidityDist.png)
 ![ruggedDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ruggedDist.png)
 
-<p float="left">
+<p float="left" align="middle">
   <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/whitepaperDist.png" width="315" />
   <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/socialDist.png" width="315" />
   <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/fiveDist.png" width="315" /> 
 </p>
-<p float="left">
+<p float="left" align="middle">
   <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/liquidityDist.png" width="315" />
   <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ruggedDist.png" width="315" />
 </p>
