@@ -37,6 +37,16 @@ The features that were dropped were the coin names and coin symbols. These featu
 
 ![tabledatanormalized](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/tabledatanormalized.png)
 
+As a result of obtaining and scraping data points from several sources, there were some irregularities in the data. To display these anomalies, we displayed the description of the data and obtained the mean, standard deviation, minimum, and maximum of each feature in our dataset. The table below shows the statistics for each of the features. As can be seen, there are several anomalies in the dataset which can be identified. For example, the minimum price is seen to be 0, although this is not mostly accurate. Moreover, the coingecko rank can be seen to be -1 which means the coin is unranked, which can perhaps be displayed differently.
+
+![describeddata](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/describeddata.png)
+
+
+
+
+
+
+
 
 For data preprocessing, we used PCA (Principal component analysis), which is an unsupervised learning technique used for ​​reducing the amount of dimensions within a dataset, increasing interpretability but at the same time minimizing information loss.
 
