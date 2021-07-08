@@ -55,6 +55,10 @@ The distribution of each feature is a very important aspect in understanding the
 ![liquidityDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/liquidityDist.png)
 ![ruggedDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ruggedDist.png)
 
+From the visualizations of feature distribution, we can see that the features are not linearly distributed, hence further distribution and correlation analysis can be greatly important. One of the most useful correlation indicators is the Correlation Matrix, where we can visualize the feature correlation present in the dataset. The following displays the correlation matrix for the dataset:
+
+![confusionmatrix](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/confusionmatrix.png)
+
 
 
 For data preprocessing, we used PCA (Principal component analysis), which is an unsupervised learning technique used for ​​reducing the amount of dimensions within a dataset, increasing interpretability but at the same time minimizing information loss.
