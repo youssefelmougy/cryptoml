@@ -66,7 +66,7 @@ The correlation matrix provided very important details as to how the features in
 ![ratiodominance](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ratiodominance.png)
 ![holderswhitepaper](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/holderswhitepaper.png)
 ![mediapercent](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/mediapercent.png)
-![liquid](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/liquid.png)
+![liquid](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/liquid.jpeg)
 
 
 
