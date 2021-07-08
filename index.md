@@ -85,6 +85,10 @@ Due to the nature of the two options output (TRUE, FALSE) produced by the algori
   <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/trainingsplit.png" width="400" />
 </p>
 
+The ML performance metrics that were used to evaluate our model were Accuracy, Balanced-Accuracy, Macro-Precision, Precision, Macro-Recall, Recall, Macro-F1, F1, Macro-ROC, and ROC. After using PCA to train the model for 20 full iterations (each taking ~5sec), the following is the results of the model (arranged in ascending order according to F1-Score):
+
+![resultstable](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/resultstable.png)
+
 
 
 
