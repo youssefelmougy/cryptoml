@@ -101,19 +101,19 @@ These results show high accuracy, through several ML performance metrics, for th
 The performance evaluation of PCA using the ML metrics chosen were displayed in the previous table of results. The below graphs display more detail of the performance evaluation of the testing and training sets using each metric:
 
 <p float="left" align="middle">
-  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/accuracy.png" width="310" />
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/accuracy.png" width="500" />
 </p>
 <p float="left" align="middle">
-  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/precision.png" width="310" />
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/precision.png" width="500" />
 </p>
 <p float="left" align="middle">
-  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/recall.png" width="310" />
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/recall.png" width="500" />
 </p>
 <p float="left" align="middle">
-  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/macrof1.png" width="310" />
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/macrof1.png" width="500" />
 </p>
 <p float="left" align="middle">
-  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/roc.png" width="310" />
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/roc.png" width="500" />
 </p>
 
 
