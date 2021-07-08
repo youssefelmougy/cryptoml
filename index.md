@@ -115,10 +115,9 @@ The results in more detail:
 
 Results at final iteration:
 
-<p float="left" align="middle">
-  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/iteration20graph.png" width="450" />
-  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/iteration20matrix.png" width="450" />
-</p>
+![iteration20graph](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/iteration20graph.png)
+![iteration20matrix](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/iteration20matrix.png)
+
 
 
 
