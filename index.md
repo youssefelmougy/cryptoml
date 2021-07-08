@@ -66,7 +66,7 @@ The correlation matrix provided very important details as to how the features in
 ![ratiodominance](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ratiodominance.png)
 ![holderswhitepaper](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/holderswhitepaper.png)
 ![mediapercent](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/mediapercent.png)
-<img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/liquid.jpeg" alt="liquid" width="400"/>
+<img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/liquid.jpeg" alt="liquid" width="400" align="middle"/>
 
 For data preprocessing, we used PCA (Principal component analysis), which is an unsupervised learning technique used for ​​reducing the amount of dimensions within a dataset, increasing interpretability but at the same time minimizing information loss.
 
