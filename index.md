@@ -72,6 +72,9 @@ The correlation matrix provided very important details as to how the features in
 
 By looking at the correlation of the 11 features with the rugged feature as well as the correlation matrix, we get a clearer picture of the distributions, correlations, and usefulness of the features in our model to predict if a cryptocurrency is rugged or not. The coingecko_rank, whitepaper, and social_media features are highly positively correlated with rugged. This makes sense since less professional and social presence of a cryptocurrency, the higher the risk of the coin being rugged. On the other hand, the num_holders feature is highly negatively correlated with rugged. This as well makes sense because the higher the number of holders then the lower the risk of the coin being rugged. The other features in our dataset have a slight positive/negative correlation with the rugged feature.
 
+The following is the complete correlation matrix of the dataset, with the feature distribution graphs on the diagonal:
+
+![bigmatrix](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/bigmatrix.png)
 
 
 
