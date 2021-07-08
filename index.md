@@ -42,8 +42,18 @@ As a result of obtaining and scraping data points from several sources, there we
 ![describeddata](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/describeddata.png)
 
 
+## Dataset Visualization
 
+It is important to know the distributions of the features in the dataset in order to choose the most appropriate machine learning models to train. After dataset cleaning and processing, the dataset contained 12 unique features that will be used in our models. Feature distribution analysis, class correlation, and feature correlation were done on the dataset to further understand the data points.
 
+The distribution of each feature is a very important aspect in understanding the correlation in the dataset. Below are distribution graphs for each of our 12 features:
+
+![data_initial](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/data_initial.png)
+![whitepaperDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/whitepaperDist.png)
+![socialDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/socialDist.png)
+![fiveDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/fiveDist.png)
+![liquidityDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/liquidityDist.png)
+![ruggedDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ruggedDist.png)
 
 
 
