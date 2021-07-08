@@ -117,15 +117,11 @@ The performance evaluation of PCA using the ML metrics chosen were displayed in 
 </p>
 
 
-
-
-
-
-
-
 ## Discussion
 
 One of the biggest issues we encountered was collecting good consistent data, and combining the data we had without any overlap. The best websites had the least amount of tokens available to us whereas the websites with a surplus of tokens usually lacked information on that token relevant to the needed respective features of the token. We hope to improve our data set and make it more organized for a smoother testing/training process during our final report and analysis.
+
+The feature analysis and correlation analysis done show that the coingecko_rank, whitepaper, and social_media features are highly positively correlated with whether the coin is rugged or not, whereas the num_holders feature is highly negatively correlated with whether the coin is rugged or not. Using PCA and an 80/20 split, we found that our model reaches a testing accuracy of 88% with an area under the curve of the ROC graph of 0.917190. We aim to train more unsupervised and supervised machine learning models for the final report and analysis.
 
 ## References
 
