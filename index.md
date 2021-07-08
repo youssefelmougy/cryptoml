@@ -33,8 +33,10 @@ Before any feature sensitivity analysis, we first did some data clean up. The fo
 
 ![tabledata](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/tabledata.png)
 
+The features that were dropped were the coin names and coin symbols. These features were unique to each coin and is irrelevant to our success metrics. Furthermore, all boolean fields were converted to integer values, such that FALSE='0' & TRUE='1'. The following is a snapshot of the cleaned dataset:
 
-The features we ended up dropping were the coin name and symbols, this will be discussed further in the next section. These features either had too little data spread across all coins or ended up being more irrelevant to our success metrics than we initially assumed. 
+![tabledatanormalized](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/tabledatanormalized.png)
+
 
 For data preprocessing, we used PCA (Principal component analysis), which is an unsupervised learning technique used for ​​reducing the amount of dimensions within a dataset, increasing interpretability but at the same time minimizing information loss.
 
