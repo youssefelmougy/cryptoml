@@ -59,6 +59,15 @@ From the visualizations of feature distribution, we can see that the features ar
 
 ![confusionmatrix](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/confusionmatrix.png)
 
+The correlation matrix provided very important details as to how the features intertwine together in the dataset. Since our project goal is to identify whether a coin is rugged or not, it is as well important to evaluate the correlation of each feature against the rugged classification feature. The following set of graphs show the class correlation between each of the 11 features with the rugged classification feature:
+
+![pricevol](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/pricevol.png) 
+![caprank](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/caprank.png)
+![ratiodominance](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ratiodominance.png)
+![holderswhitepaper](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/holderswhitepaper.png)
+![mediapercent](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/mediapercent.png)
+![liquid](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/liquid.png)
+
 
 
 For data preprocessing, we used PCA (Principal component analysis), which is an unsupervised learning technique used for ​​reducing the amount of dimensions within a dataset, increasing interpretability but at the same time minimizing information loss.
