@@ -123,6 +123,10 @@ One of the biggest issues we encountered was collecting good consistent data, an
 
 The feature analysis and correlation analysis done show that the coingecko_rank, whitepaper, and social_media features are highly positively correlated with whether the coin is rugged or not, whereas the num_holders feature is highly negatively correlated with whether the coin is rugged or not. Using PCA and an 80/20 split, we found that our model reaches a testing accuracy of 88% with an area under the curve of the ROC graph of 0.917190. We aim to train more unsupervised and supervised machine learning models for the final report and analysis.
 
+## Conclusion
+
+Conclusion text.
+
 ## References
 
 [1] Sebastião, H., Godinho, P. Forecasting and trading cryptocurrencies with machine learning under changing market conditions. Financ Innov 7, 3 (2021). [Retrieve](https://doi.org/10.1186/s40854-020-00217-x).
