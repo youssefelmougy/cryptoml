@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![ProjectProposal](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/projmidpoint.jpg)
+![ProjectProposal](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/projfinal.jpg)
 
 ## Introduction/Background
 
