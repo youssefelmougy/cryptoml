@@ -71,11 +71,11 @@ The following is the complete correlation matrix of the dataset, with the featur
 
 ## Methods and Results
 
-Due to the nature of the two options output (TRUE, FALSE) produced by the algorithm, this problem is a binary classification problem. As part of our unsupervised learning approach, we used PCA (Principal Component Analysis). PCA is used for reducing the amount of dimensions within a dataset, increasing interpretability but at the same time minimizing information loss. We aim to optimize the number of features used in the prediction by using PCA. We use the classic 80/20 training/testing split. The following is the count of data points classified rugged or not, as well as the split of training and testing data:
+Due to the nature of the two options output (TRUE, FALSE) produced by the algorithm, this problem is a binary classification problem. As part of our unsupervised learning approach, we used PCA (Principal Component Analysis). PCA is used for reducing the amount of dimensions within a dataset, increasing interpretability but at the same time minimizing information loss. We aim to optimize the number of features used in the prediction by using PCA. We use the classic 80/20 training/testing split. The following is the count of data points classified memecoin or not, as well as the split of training and testing data:
 
 <p float="left" align="middle">
-  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ruggedcount.png" width="400" />
-  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/trainingsplit.png" width="400" />
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ruggedcountnew.png" width="400" />
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/trainingsplitnew.png" width="400" />
 </p>
 
 The ML performance metrics that were used to evaluate our model were Accuracy, Balanced-Accuracy, Macro-Precision, Precision, Macro-Recall, Recall, Macro-F1, F1, Macro-ROC, and ROC. After using PCA to train the model for 20 full iterations (each taking ~5sec), the following is the results of the model (arranged in ascending order according to F1-Score):
