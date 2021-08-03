@@ -48,7 +48,7 @@ It is important to know the distributions of the features in the dataset in orde
 
 The distribution of each feature is a very important aspect in understanding the correlation in the dataset. Below are distribution graphs for each of our 12 features:
 
-![data_initialnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/data_initial.png) 
+![data_initialnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/data_initialnew.png) 
 ![ruggedDistnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ruggedDistnew.png)
 
 From the visualizations of feature distribution, we can see that the features are not linearly distributed, hence further distribution and correlation analysis can be greatly important. One of the most useful correlation indicators is the Correlation Matrix, where we can visualize the feature correlation present in the dataset. The following displays the correlation matrix for the dataset:
