@@ -8,7 +8,7 @@ layout: default
 
 Cryptocurrencies, or virtual currencies, are digital means of exchange that use cryptography for security. The word 'crypto' comes from the ancient greek word, 'kryptós', which means hidden or private. A digital currency that is created and used by private individuals or groups has multiple benefits. Currently, cryptocurrencies can be divided into three categories: **Bitcoin**, **altcoins** (anything other than Bitcoin that has value), and **shitcoins** (coins with ultimately no value). 
 
-The term shitcoin refers to a cryptocurrency with little to no value or a digital currency that has no immediate, discernible purpose. Shitcoins are characterized by short-term price increases followed by nosedives caused by investors who want to capitalize on short-term gains. As such, these currencies are considered to be bad investments. Shitcoins are also referred to as Memecoins.
+The term shitcoin refers to a cryptocurrency with little to no value or a digital currency that has no immediate, discernible purpose. Shitcoins are characterized by short-term price increases followed by nosedives caused by investors who want to capitalize on short-term gains. As such, these currencies are considered to be bad investments. Shitcoins are also sometimes referred to as Memecoins.
 
 
 ## Problem definition
@@ -112,16 +112,35 @@ The performance evaluation of PCA using the ML metrics chosen were displayed in 
 </p>
 
 ### Support Vector Machines (SVM)
+SVM is a type of supervised learning technique that is largely used in classification problems. We applied SVM by plotting all of the data points in n-dimensional space (where n = features) with the value of each feature being a coordinate. The classification comes in through the foundation of a hyperplane that intersects the graph of the plotted points, splitting the graph into two separate classes. Prior to applying SVM, we scaled our data to help reduce larger numeric ranges and redundant noise within our graph. Cross-validation was used to find the mean accuracy of our data, which was high sitting at 0.99%. 
+
+We can see in the graph of histograms, each mini graph represents one of the features given for the coin to where we see statistics for each of the coins within our dataset. We can see that the data is skewed to the left for most of them except the last one which is the memecoin feature. This data shows that we have a common “typical value” for each feature which indicates we have a bound (upper bound in this case since the graph skewers to the left). 
+
+<p float="left" align="middle">
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/histograms.png" width="400" />
+</p>
+
+PCA was applied to the small data set to reduce the text data features we had significantly. Despite the success of this implementation, we still found this data to be ultimately useless since the data plotted showed insignificant differences between the two groupings. There were a couple of noisy data within the graph but the we didn’t use the information gained from this to help classify our data. 
+
+<p float="left" align="middle">
+  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/pca3D.png" width="400" />
+</p>
 
 ## Discussion
 
-One of the biggest issues we encountered was collecting good consistent data, and combining the data we had without any overlap. The best websites had the least amount of tokens available to us whereas the websites with a surplus of tokens usually lacked information on that token relevant to the needed respective features of the token. We hope to improve our data set and make it more organized for a smoother testing/training process during our final report and analysis.
+One of the biggest issues we encountered was collecting good consistent data, and combining the data we had without any overlap. The best websites had the least amount of tokens available to us whereas the websites with a surplus of tokens usually lacked information on that token relevant to the needed respective features of the token.
+
+With that, we took time again to reflect on this issue and make the necessary adjustments going further into our project. We have decided to create a “memecoin” classifier using supervised and unsupervised machine learning techniques combined with rigorous dimensionally reductions to give us a great predictive model. For supervised learning, we used SVM (support vector machine) for our analysis and for unsupervised learning, we used PCA but applied it to our newly updated dataset. 
 
 The feature analysis and correlation analysis done show that the coingecko_rank, whitepaper, and social_media features are highly positively correlated with whether the coin is rugged or not, whereas the num_holders feature is highly negatively correlated with whether the coin is rugged or not. Using PCA and an 80/20 split, we found that our model reaches a testing accuracy of 88% with an area under the curve of the ROC graph of 0.917190. We aim to train more unsupervised and supervised machine learning models for the final report and analysis.
 
+The SVM done was very successful and produced an accuracy of 99%. This indicates that our model was either really good or something went wrong within our application. 
+
+PCA was widely used throughout the second iteration of our project, and within both datasets. The numerical data set proved to have a more successful usage of the PCA algorithm by providing better results. The PCA performed on the text dataset was successful as well but because this data set was small, the information provided was rather useless. This indicates that the text features were overall not helpful for each of the learning techniques applied to it. 
+
 ## Conclusion
 
-Conclusion text.
+Our project had an original goal of detecting shitcoins in efforts to prevent new investors from getting scammed and potentially losing all of their investments. This was difficult due to the data collection process, which was the hardest portion of this project. The midterm report we created could have been improved significantly if we had a solidified dataset from the beginning. We had a lot of missing data for most of the data points, (especially the ones >$0.01) which also led to problems. We attempted to fix these issues by recollecting our dataset and changing our project goal. We realized that the original dataset had plenty of features with data that could only be found on exclusive websites. Extracting the data was hard as well since no website provided cvs or excel files. We had to use a webscraper to help extract and collect all the data, which could be prone to mistakes if done incorrectly. Despite our attempt to clean up the data and reduce the missing points, we still ended up having lost and uncollected data which resulted in us pruning the dataset. Currently, there are no reliable data sources for this problem to which better data sources can to better models which can be tested more rigorously. 
 
 ## Final Video
 
