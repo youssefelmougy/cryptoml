@@ -120,7 +120,7 @@ We can see in the graph of histograms, each mini graph represents one of the fea
   <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/histograms.png" width="400" />
 </p>
 
-PCA was applied to the small data set to reduce the text data features we had significantly. Despite the success of this implementation, we still found this data to be ultimately useless since the data plotted showed insignificant differences between the two groupings. There were a couple of noisy data within the graph but the we didn’t use the information gained from this to help classify our data. 
+PCA was applied to the small data set to reduce the text data features we had significantly. This data set included text data of 30 memecoins and 50 non-memecoins. Despite the success of this implementation, we still found this data to be ultimately useless since the data plotted showed insignificant differences between the two groupings. There were a couple of noisy data within the graph but the we didn’t use the information gained from this to help classify our data. 
 
 <p float="left" align="middle">
   <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/pca3D.png" width="400" />
