@@ -31,15 +31,15 @@ Since data came from differing sources, we ended up having entries with more or 
 
 Before any feature sensitivity analysis, we first did some data clean up. The following is a snapshot of our full dataset which contains 9143 cryptocurrencies and 14 features:
 
-![tabledata](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/tabledata.png)
+![tabledatanew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/tabledatanew.png)
 
 The features that were dropped were the coin names and coin symbols. These features were unique to each coin and is irrelevant to our success metrics. Furthermore, all boolean fields were converted to integer values, such that FALSE='0' & TRUE='1'. The following is a snapshot of the cleaned dataset:
 
-![tabledatanormalized](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/tabledatanormalized.png)
+![tabledatanormalizednew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/tabledatanormalizednew.png)
 
 As a result of obtaining and scraping data points from several sources, there were some irregularities in the data. To display these anomalies, we displayed the description of the data and obtained the mean, standard deviation, minimum, and maximum of each feature in our dataset. The table below shows the statistics for each of the features. As can be seen, there are several anomalies in the dataset which can be identified. For example, the minimum price is seen to be 0, although this is not mostly accurate. Moreover, the coingecko rank can be seen to be -1 which means the coin is unranked, which can perhaps be displayed differently.
 
-![describeddata](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/describeddata.png)
+![describeddatanew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/describeddatanew.png)
 
 
 ## Dataset Visualization
@@ -48,33 +48,26 @@ It is important to know the distributions of the features in the dataset in orde
 
 The distribution of each feature is a very important aspect in understanding the correlation in the dataset. Below are distribution graphs for each of our 12 features:
 
-![data_initial](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/data_initial.png) 
-![whitepaperDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/whitepaperDist.png)
-![socialDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/socialDist.png)
-![fiveDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/fiveDist.png)
-![liquidityDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/liquidityDist.png)
-![ruggedDist](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ruggedDist.png)
+![data_initialnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/data_initial.png) 
+![ruggedDistnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ruggedDistnew.png)
 
 From the visualizations of feature distribution, we can see that the features are not linearly distributed, hence further distribution and correlation analysis can be greatly important. One of the most useful correlation indicators is the Correlation Matrix, where we can visualize the feature correlation present in the dataset. The following displays the correlation matrix for the dataset:
 
-![confusionmatrix](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/confusionmatrix.png)
+![confusionmatrixnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/confusionmatrixnew.png)
 
 The correlation matrix provided very important details as to how the features intertwine together in the dataset. Since our project goal is to identify whether a coin is rugged or not, it is as well important to evaluate the correlation of each feature against the rugged classification feature. The following set of graphs show the class correlation between each of the 11 features with the rugged classification feature:
 
-![pricevol](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/pricevol.png) 
-![caprank](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/caprank.png)
-![ratiodominance](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ratiodominance.png)
-![holderswhitepaper](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/holderswhitepaper.png)
-![mediapercent](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/mediapercent.png)
-<p float="left" align="middle">
-  <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/liquid.jpeg" width="400" />
-</p>
+![pricevolnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/pricevolnew.png) 
+![capranknew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/capranknew.png)
+![ratiodominancenew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ratiodominancenew.png)
+![mediapercentnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/mediapercentnew.png)
+
 
 By looking at the correlation of the 11 features with the rugged feature as well as the correlation matrix, we get a clearer picture of the distributions, correlations, and usefulness of the features in our model to predict if a cryptocurrency is rugged or not. The coingecko_rank, whitepaper, and social_media features are highly positively correlated with rugged. This makes sense since less professional and social presence of a cryptocurrency, the higher the risk of the coin being rugged. On the other hand, the num_holders feature is highly negatively correlated with rugged. This as well makes sense because the higher the number of holders then the lower the risk of the coin being rugged. The other features in our dataset have a slight positive/negative correlation with the rugged feature.
 
 The following is the complete correlation matrix of the dataset, with the feature distribution graphs on the diagonal, after scaling and normalizing the dataset:
 
-![bigmatrix](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/bigmatrix.png)
+![bigmatrixnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/bigmatrixnew.png)
 
 ## Methods and Results
 
