@@ -8,7 +8,7 @@ layout: default
 
 Cryptocurrencies, or virtual currencies, are digital means of exchange that use cryptography for security. The word 'crypto' comes from the ancient greek word, 'kryptós', which means hidden or private. A digital currency that is created and used by private individuals or groups has multiple benefits. Currently, cryptocurrencies can be divided into three categories: **Bitcoin**, **altcoins** (anything other than Bitcoin that has value), and **shitcoins** (coins with ultimately no value). 
 
-The term shitcoin refers to a cryptocurrency with little to no value or a digital currency that has no immediate, discernible purpose. Shitcoins are characterized by short-term price increases followed by nosedives caused by investors who want to capitalize on short-term gains. As such, these currencies are considered to be bad investments.
+The term shitcoin refers to a cryptocurrency with little to no value or a digital currency that has no immediate, discernible purpose. Shitcoins are characterized by short-term price increases followed by nosedives caused by investors who want to capitalize on short-term gains. As such, these currencies are considered to be bad investments. Shitcoins are also referred to as Memecoins.
 
 
 ## Problem definition
@@ -17,36 +17,36 @@ Shitcoins have their pros and cons, as the purpose is for small investors who li
 
 Previous models, such as [1], have used linear models, random forests (RFs), and SVMs to forecast prices of the Bitcoin and altcoins but have given little attention to shitcoins.
 
-Our goal is to use predictive analysis techniques to help indicate whether a shitcoin is a potential rug or not, which can be determined by looking at all the recent transaction histories, holders, and contracts of the shitcoin [2][3]. We will look at shitcoins that have already been rugged and ones that are still going strong to help with future coins. This will be valuable to evaluate the risk of investments into these shitcoins.
+Our goal is to use predictive analysis techniques to help indicate whether a coin is a potential memecoin or not, which can be determined by looking at all the recent transaction histories, holders, and contracts of the coin [2][3]. We will look at coins that have already been classified as memecoins and ones that are still going strong to help with future coins. This will be valuable to evaluate the risk of investments into these shitcoins.
 
 
 ## Dataset Collection
 
-The data collection process is the most important and crucial part of this project, which is also why it was also the most difficult portion. Our problem relies on a significant amount of data and features to determine whether or not a cryptocurrency is a rug pull or a scam. We ended up using various web scraping tools and tedious data scraping without tools to acquire all the needed data. The data collected includes Bitcoin, altcoins, and coins that have been rug-pulled. Certain cryptocurrencies have limited information simply due to lack of professional development, which itself is a feature we have included (lack of credibility). The other features used include the coin symbol, price, volume,  market cap, coingecko rank, volume to market cap ratio, dominance, number of holders, if it has social media, if it has a whitepaper, if 5 holders own 50% of the supply, if it has an unlocked liquidity pool, and whether it's a scam/rug-pull.
+The data collection process is the most important and crucial part of this project, which is also why it was also the most difficult portion. Our problem relies on a significant amount of data and features to determine whether or not a cryptocurrency is a meme coin or a scam. We ended up using various web scraping tools and tedious data scraping without tools to acquire all the needed data. The data collected includes Bitcoin, altcoins, and memecoins. Certain cryptocurrencies have limited information simply due to lack of professional development, which itself is a feature we have included (lack of credibility). The other features used include the coin symbol, price, volume,  market cap, coingecko rank, volume to market cap ratio, dominance, social media coingecko likes, fully diluted valuation, and whether it's a memecoin.
 
 Since data came from differing sources, we ended up having entries with more or less data than needed. After the collection of the data, we had to clean everything and unify the formatting to give us a clean and flushed out dataset. This is discussed in the following section.
 
 
 ## Dataset Processing
 
-Before any feature sensitivity analysis, we first did some data clean up. The following is a snapshot of our full dataset which contains 9143 cryptocurrencies and 14 features:
+Before any feature sensitivity analysis, we first did some data clean up. The following is a snapshot of our full dataset which contains 2395 cryptocurrencies and 11 features:
 
 ![tabledatanew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/tabledatanew.png)
 
-The features that were dropped were the coin names and coin symbols. These features were unique to each coin and is irrelevant to our success metrics. Furthermore, all boolean fields were converted to integer values, such that FALSE='0' & TRUE='1'. The following is a snapshot of the cleaned dataset:
+The features that were dropped were the coin names and coin symbols. These features were unique to each coin and is irrelevant to our success metrics. Furthermore, the meme_coin field was converted to integer values, such that NOT-MEME-COIN='-1' & MEME-COIN='1'. The following is a snapshot of the cleaned dataset:
 
 ![tabledatanormalizednew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/tabledatanormalizednew.png)
 
-As a result of obtaining and scraping data points from several sources, there were some irregularities in the data. To display these anomalies, we displayed the description of the data and obtained the mean, standard deviation, minimum, and maximum of each feature in our dataset. The table below shows the statistics for each of the features. As can be seen, there are several anomalies in the dataset which can be identified. For example, the minimum price is seen to be 0, although this is not mostly accurate. Moreover, the coingecko rank can be seen to be -1 which means the coin is unranked, which can perhaps be displayed differently.
+As a result of obtaining and scraping data points from several sources, there were some irregularities in the data. To display these anomalies, we displayed the description of the data and obtained the mean, standard deviation, minimum, and maximum of each feature in our dataset. The table below shows the statistics for each of the features. As can be seen, there are several anomalies in the dataset which can be identified. For example, the minimum price is seen to be 0, although this is not mostly accurate.
 
 ![describeddatanew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/describeddatanew.png)
 
 
 ## Dataset Visualization
 
-It is important to know the distributions of the features in the dataset in order to choose the most appropriate machine learning models to train. After dataset cleaning and processing, the dataset contained 12 unique features that will be used in our models. Feature distribution analysis, class correlation, and feature correlation were done on the dataset to further understand the data points.
+It is important to know the distributions of the features in the dataset in order to choose the most appropriate machine learning models to train. After dataset cleaning and processing, the dataset contained 9 unique features that will be used in our models. Feature distribution analysis, class correlation, and feature correlation were done on the dataset to further understand the data points.
 
-The distribution of each feature is a very important aspect in understanding the correlation in the dataset. Below are distribution graphs for each of our 12 features:
+The distribution of each feature is a very important aspect in understanding the correlation in the dataset. Below are distribution graphs for each of our 9 features:
 
 ![data_initialnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/data_initialnew.png) 
 ![ruggedDistnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/ruggedDistnew.png)
@@ -55,7 +55,7 @@ From the visualizations of feature distribution, we can see that the features ar
 
 ![confusionmatrixnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/confusionmatrixnew.png)
 
-The correlation matrix provided very important details as to how the features intertwine together in the dataset. Since our project goal is to identify whether a coin is rugged or not, it is as well important to evaluate the correlation of each feature against the rugged classification feature. The following set of graphs show the class correlation between each of the 11 features with the rugged classification feature:
+The correlation matrix provided very important details as to how the features intertwine together in the dataset. Since our project goal is to identify whether a coin is a memecoin or not, it is as well important to evaluate the correlation of each feature against the meme_coin classification feature. The following set of graphs show the class correlation between each of the 9 features with the meme_coin classification feature:
 
 ![pricevolnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/pricevolnew.png) 
 ![capranknew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/capranknew.png)
@@ -63,7 +63,7 @@ The correlation matrix provided very important details as to how the features in
 ![mediapercentnew](https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/mediapercentnew.png)
 
 
-By looking at the correlation of the 11 features with the rugged feature as well as the correlation matrix, we get a clearer picture of the distributions, correlations, and usefulness of the features in our model to predict if a cryptocurrency is rugged or not. The coingecko_rank, whitepaper, and social_media features are highly positively correlated with rugged. This makes sense since less professional and social presence of a cryptocurrency, the higher the risk of the coin being rugged. On the other hand, the num_holders feature is highly negatively correlated with rugged. This as well makes sense because the higher the number of holders then the lower the risk of the coin being rugged. The other features in our dataset have a slight positive/negative correlation with the rugged feature.
+By looking at the correlation of the 9 features with the rugged feature as well as the correlation matrix, we get a clearer picture of the distributions, correlations, and usefulness of the features in our model to predict if a cryptocurrency is memecoin or not. The coingecko_rank and coingecko_likes features are highly positively correlated with memecoin. This makes sense since less professional and social presence of a cryptocurrency, the higher the risk of the coin being a memecoin. On the other hand, the fully_diluted_valuation feature is highly negatively correlated with rugged. This as well makes sense because the higher the diluted valuation then the lower the risk of the coin being a memecoin. The other features in our dataset have a slight positive/negative correlation with the memecoin feature.
 
 The following is the complete correlation matrix of the dataset, with the feature distribution graphs on the diagonal, after scaling and normalizing the dataset:
 
