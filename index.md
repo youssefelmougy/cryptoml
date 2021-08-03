@@ -71,6 +71,8 @@ The following is the complete correlation matrix of the dataset, with the featur
 
 ## Methods and Results
 
+# Principle Component Analysis (PCA)
+
 Due to the nature of the two options output (TRUE, FALSE) produced by the algorithm, this problem is a binary classification problem. As part of our unsupervised learning approach, we used PCA (Principal Component Analysis). PCA is used for reducing the amount of dimensions within a dataset, increasing interpretability but at the same time minimizing information loss. We aim to optimize the number of features used in the prediction by using PCA. We use the classic 80/20 training/testing split. The following is the count of data points classified memecoin or not, as well as the split of training and testing data:
 
 <p float="left" align="middle">
@@ -109,6 +111,7 @@ The performance evaluation of PCA using the ML metrics chosen were displayed in 
   <img src="https://raw.githubusercontent.com/youssefelmougy/cryptoml/master/roc.png" width="1200" />
 </p>
 
+# Support Vector Machines (SVM)
 
 ## Discussion
 
